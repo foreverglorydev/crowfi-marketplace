@@ -1,0 +1,77 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.cards-container {
+  display: flex;
+  border-radius: 6px;
+  color: #333;
+  background: #eee;
+  padding: 1rem;
+  // box-shadow: 0 0 1rem #000 inset;
+  overflow-x: auto;
+  position: relative;
+}
+.cards-container::-webkit-scrollbar {
+    display: block;
+}
+.card {
+  flex: 1 0 250px;
+  box-shadow: 0 1px 1rem -4px #000;
+  background: #fff;
+  margin: 1rem;
+  overflow: hidden;
+  height: 550px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 350ms ease-in-out;
+}
+.card > img {
+  width: auto;
+  height: 367px;
+  object-fit: center;
+}
+  
+.card:hover {
+  box-shadow: 0 4px 1rem -4px #000;
+  transform: translateY(-3px);
+}
+
+.card-content {
+  padding: 1rem;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 625px) {
+  .container {
+    width: 100%
+  }
+  .cards-container {
+    padding: .5rem;
+  }
+  
+  .card {
+    margin: .5rem;
+  }
+}
+h2{
+    font-weight: 600;
+    font-size: 20px;
+    
+}
+p{
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 90%;
+    margin: 12px 0px 0px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

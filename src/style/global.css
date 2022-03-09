@@ -1,0 +1,30 @@
+div::selection{
+    background-color: rgb(21, 178, 229);
+    color: rgb(255, 255, 255);
+}
+div::after{
+    box-sizing: border-box;
+}
+div::before{
+    box-sizing: border-box;
+}
+@media screen and (min-width:1200px) {
+    div{
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width: 1024px)
+{
+    div{
+        font-size: 14.5px;
+    }
+}
+body{
+    font-family: Poppins, sans-serif;
+    line-height: 1.5;
+}
+@keyframes floating1 {
+    50% {
+       transform: translateY(-25px);
+    }
+}
